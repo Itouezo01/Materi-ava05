@@ -23,9 +23,12 @@ public class TokoBuku {
         System.out.println(buku1.Author);
         System.out.println(buku2.Judul);
         System.out.println(buku2.Author);
-        System.out.println(buku1.penerbit);
+        buku1.harga.setJual(120000);
+        System.out.println(buku1.penerbit.nama);
+        System.out.println("Harga jual buku 1 = " + buku1.harga.getJual());
+        System.out.println("Harga jual buku 2 = " + buku2.harga.getJual());
         System.out.println(buku1.harga.getBeli());
-        
+        buku1.terjual();
         }
     }
 
